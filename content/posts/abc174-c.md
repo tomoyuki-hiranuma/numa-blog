@@ -1,6 +1,6 @@
 ---
 title: "AtcoderBeginnerContest174 C問題の考察"
-date: 2021-01-12T21:54:52+09:00
+date: 2020-08-09T21:54:52+09:00
 draft: false
 ---
 こんにちは。numaです．
