@@ -6,11 +6,11 @@
     <description>Recent content in Posts on numa&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Jan 2021 21:54:52 +0900</lastBuildDate><atom:link href="http://www.numa-blog.tokyo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Aug 2020 21:54:52 +0900</lastBuildDate><atom:link href="http://www.numa-blog.tokyo/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AtcoderBeginnerContest174 C問題の考察</title>
       <link>http://www.numa-blog.tokyo/posts/abc174-c/</link>
-      <pubDate>Tue, 12 Jan 2021 21:54:52 +0900</pubDate>
+      <pubDate>Sun, 09 Aug 2020 21:54:52 +0900</pubDate>
       
       <guid>http://www.numa-blog.tokyo/posts/abc174-c/</guid>
       <description>こんにちは。numaです． 今回は前回のABC174がどうして解けなかったのか。どういう風に考えれば解けるのか。分析して自分の脳内を整理したいと思います． 筆者自身、まだまだ茶色の端くれで理解が甘いところがあると思うのでご指摘や別解等があると嬉</description>
@@ -19,7 +19,7 @@
     <item>
       <title>サルでもわかる遺伝的アルゴリズム</title>
       <link>http://www.numa-blog.tokyo/posts/monkey-ga/</link>
-      <pubDate>Tue, 12 Jan 2021 21:20:47 +0900</pubDate>
+      <pubDate>Sun, 02 Aug 2020 21:20:47 +0900</pubDate>
       
       <guid>http://www.numa-blog.tokyo/posts/monkey-ga/</guid>
       <description>こんにちわ。numaです。 基本的な遺伝的アルゴリズムについてまとめたいと思いたちました。 サルでもわかるようにまとめるつもりですので、温かく読んでいただけると幸いです。 (ウキウキーーウキーーー) サルでもわかるはそういうわけではないです、、笑 ご</description>
