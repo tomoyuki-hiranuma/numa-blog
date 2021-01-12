@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     サルでもわかる遺伝的アルゴリズム | 
+    numa&#39;s blog
+  
+</title><meta name="author" content="">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="http://www.numa-blog.tokyo/posts/monkey-ga/"><meta property="og:title" content="サルでもわかる遺伝的アルゴリズム" />
+<meta property="og:description" content="こんにちわ。numaです。 基本的な遺伝的アルゴリズムについてまとめたいと思いたちました。 サルでもわかるようにまとめるつもりですので、温かく読んでいただけると幸いです。 (ウキウキーーウキーーー) サルでもわかるはそういうわけではないです、、笑 ご" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.numa-blog.tokyo/posts/monkey-ga/" />
+<meta property="article:published_time" content="2021-01-12T21:20:47+09:00" />
+<meta property="article:modified_time" content="2021-01-12T21:20:47+09:00" />
+<meta itemprop="name" content="サルでもわかる遺伝的アルゴリズム">
+<meta itemprop="description" content="こんにちわ。numaです。 基本的な遺伝的アルゴリズムについてまとめたいと思いたちました。 サルでもわかるようにまとめるつもりですので、温かく読んでいただけると幸いです。 (ウキウキーーウキーーー) サルでもわかるはそういうわけではないです、、笑 ご">
+<meta itemprop="datePublished" content="2021-01-12T21:20:47+09:00" />
+<meta itemprop="dateModified" content="2021-01-12T21:20:47+09:00" />
+<meta itemprop="wordCount" content="1501">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="サルでもわかる遺伝的アルゴリズム"/>
+<meta name="twitter:description" content="こんにちわ。numaです。 基本的な遺伝的アルゴリズムについてまとめたいと思いたちました。 サルでもわかるようにまとめるつもりですので、温かく読んでいただけると幸いです。 (ウキウキーーウキーーー) サルでもわかるはそういうわけではないです、、笑 ご"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="http://www.numa-blog.tokyo/">numa&#39;s blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-3">サルでもわかる遺伝的アルゴリズム</h2>
+
+                        <div class="content">
+                            <p>こんにちわ。numaです。
+基本的な遺伝的アルゴリズムについてまとめたいと思いたちました。<br>
+サルでもわかるようにまとめるつもりですので、温かく読んでいただけると幸いです。<br>
+(ウキウキーーウキーーー)<br>
+サルでもわかるはそういうわけではないです、、笑<br>
+ご指摘や改善案、感想などは絶賛募集中です。(たたくのだけはやめてください笑)</p>
+<h1 id="サルでもわかる遺伝的アルゴリズム">サルでもわかる遺伝的アルゴリズム</h1>
+<h2 id="遺伝的アルゴリズムgenetic-algorithm通称ga">遺伝的アルゴリズム(Genetic Algorithm:通称GA)</h2>
+<p>遺伝的アルゴリズムとは生物の進化から着想を得た人工知能です。これは1975年にミシガン大学のJohn Hollandが考案しました。</p>
+<p>人工知能と言えば数年前から有名なDeepLearningや機械学習といったワードがが思い浮かぶと思います。DeepLearningは人間の脳を模倣したモデルですが、遺伝的アルゴリズムは生物の進化を模倣してその時の環境(評価関数)に対して最適な解(なるべく良い答え)を求めることが可能な手法です。</p>
+<p>雑に言うと、たまたま良いものが出たら後世に伝えていこう、といったイメージです。</p>
+<p>(伝われ！！！雑、、)</p>
+<p>では、実際のアルゴリズムです。</p>
+<h2 id="基本的なアルゴリズム">基本的なアルゴリズム</h2>
+<p>①初期集団生成<br>
+　プログラマが決めた集団数個の個体をランダムに生成します。</p>
+<p>②評価<br>
+　集団内のそれぞれの個体に評価値をつけます。</p>
+<p>③選択<br>
+　評価値の高い個体を選択します。</p>
+<p>④交叉<br>
+　選択された個体同士を交叉させて新たな個体を生みます。</p>
+<p>⑤突然変異<br>
+　ある一定の確率で突然変異を起こします。これは良い方向や悪い方向さまざまです。</p>
+<p>⑥条件を満たしていれば終了、満たしていなければ②～⑤を繰り返す。</p>
+<p>　試行回数がプログラマが指定した回数に達していたり、最良の評価値が最適解に達したりしたら終了します。</p>
+<p><img src="/images/ga_flow.gif" alt="image"><br>
+ </p>
+<h3 id="逆上がりを例にイメージしてみる">逆上がりを例にイメージしてみる</h3>
+<p>ここでは小難しい話や複雑な話は割愛します。実際とは多少異なることがあるかもしれないですがわかりやすさを重視するためご了承ください。逆上がりの習得を例に考えてみましょう。</p>
+<p>①初期集団生成<br>
+わかりやすく言うと何百人の子供が鉄棒に初めて触れて坂上がりのやり方を知らずに1回やってみる感覚に近いと思います。</p>
+<p>②評価<br>
+逆上がりを知っている教師がそれぞれの子供たちに決められたルールに従って点数をつけていく作業です。</p>
+<p>③選択<br>
+点数の高い子供を選びます。</p>
+<p>④交叉<br>
+本来は交叉させて新たな個体を生みますが、例が下手なため表現を変えます。</p>
+<p>選択された子供が他の子供たちにどうやったら点数が上がったのか口頭で一回教えるイメージです。つまり子供たちがレベルアップしたのです。これで多少はより高い評価がもらえるかもしれません。</p>
+<p>⑤突然変異<br>
+突然子供がコツを掴んだり感覚が狂ったりするイメージに近いですかね。</p>
+<p>⑥終了条件判断<br>
+子供たちの逆上がりチャレンジ回数やきれいに成功した人がいたら終了です。満たしていなければ繰り返します。</p>
+<p>これにより、何も知らない子供たちが先生の評価に従って最適な逆上がりを探索できました。</p>
+<h2 id="研究例">研究例</h2>
+<p>・スケジューリング問題</p>
+<p>・巡回セールスマン問題</p>
+<p>・実数値関数最適化</p>
+<p>・ナップザック問題</p>
+<p>等さまざまな複雑な問題に対して最適化の研究が行われています。</p>
+<h2 id="gaで生まれた実際の例">GAで生まれた実際の例</h2>
+<p>・新幹線N700系</p>
+<h2 id="まとめ">まとめ</h2>
+<p>サルでもわかる遺伝的アルゴリズムいかがでしたか？</p>
+<p>GAはまるで自分でサンプルを生成して学習しているような挙動が興味深く感じてきませんか？そうでしょう。そうであってほしいです。</p>
+<p>GAのイメージの手助けになっていると嬉しいです。また、ここで得られる最適解はいままでの最適解とは一味違った見たこともない結果が出てくる可能性があるので面白いですね。</p>
+<p> </p>
+<h3 id="参考資料">参考資料</h3>
+<p><a href="https://plaza.rakuten.co.jp/sugowaza/diary/200707060000/">楽天ブログ</a></p>
+<p> <a href="http://home.interlink.or.jp/~kumagai/genealg.htm">Kumagai&rsquo;s PAGE~GAとは~</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright &copy; numa&#39;s blog 2021
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -3,15 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://www.numa-blog.tokyo/posts/abc174-c/</loc>
+    <lastmod>2021-01-12T21:54:52+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://www.numa-blog.tokyo/</loc>
+    <lastmod>2021-01-12T21:54:52+09:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://www.numa-blog.tokyo/posts/</loc>
+    <lastmod>2021-01-12T21:54:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.numa-blog.tokyo/posts/monkey-ga/</loc>
+    <lastmod>2021-01-12T21:20:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.numa-blog.tokyo/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.numa-blog.tokyo/tags/</loc>
   </url>
   
 </urlset>
