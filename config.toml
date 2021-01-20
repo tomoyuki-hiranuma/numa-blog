@@ -3,4 +3,4 @@ languageCode = "en-us"
 title = "numa's blog"
 theme = "chunky-poster"
 hasCJKLanguage = true
-summaryLength = 120
+summaryLength = 0
