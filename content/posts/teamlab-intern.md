@@ -2,6 +2,7 @@
 title: "チームラボインターンに参加してきました"
 date: 2021-01-06T00:07:41+09:00
 draft: false
+images: ["/images/teamlab.png"]
 ---
 
 こんにちは、ぬまです。  
