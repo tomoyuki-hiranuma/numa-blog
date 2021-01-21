@@ -1,6 +1,8 @@
-baseURL = "http://www.numa-blog.tokyo/"
+baseURL = "https://www.numa-blog.tokyo/"
 languageCode = "en-us"
 title = "numa's blog"
 theme = "chunky-poster"
 hasCJKLanguage = true
 summaryLength = 0
+[Params]
+  images = ["/static/images/icon-numa.png"]
