@@ -1,6 +1,6 @@
 baseURL = "https://www.numa-blog.tokyo/"
 languageCode = "en-us"
-title = "numa's blog ~numaの備忘録~"
+title = "numa's blog ~memo~"
 theme = "chunky-poster"
 hasCJKLanguage = true
 summaryLength = 0
