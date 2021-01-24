@@ -1,54 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on numa&#39;s blog</title>
-    <link>http://www.numa-blog.tokyo/posts/</link>
-    <description>Recent content in Posts on numa&#39;s blog</description>
+    <title>Posts on numa&#39;s blog ~memo~</title>
+    <link>https://www.numa-blog.tokyo/posts/</link>
+    <description>Recent content in Posts on numa&#39;s blog ~memo~</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Jan 2021 00:07:41 +0900</lastBuildDate><atom:link href="http://www.numa-blog.tokyo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 24 Jan 2021 17:43:43 +0900</lastBuildDate><atom:link href="https://www.numa-blog.tokyo/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大学ポータルに自動ログインしてみました(~Ruby編~)</title>
+      <link>https://www.numa-blog.tokyo/posts/titech-login/</link>
+      <pubDate>Sun, 24 Jan 2021 17:43:43 +0900</pubDate>
+      
+      <guid>https://www.numa-blog.tokyo/posts/titech-login/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>チームラボインターンに参加してきました</title>
-      <link>http://www.numa-blog.tokyo/posts/teamlab-intern/</link>
+      <link>https://www.numa-blog.tokyo/posts/teamlab-intern/</link>
       <pubDate>Wed, 06 Jan 2021 00:07:41 +0900</pubDate>
       
-      <guid>http://www.numa-blog.tokyo/posts/teamlab-intern/</guid>
+      <guid>https://www.numa-blog.tokyo/posts/teamlab-intern/</guid>
       <description></description>
     </item>
     
     <item>
       <title>2020年振り返り</title>
-      <link>http://www.numa-blog.tokyo/posts/review-2020/</link>
+      <link>https://www.numa-blog.tokyo/posts/review-2020/</link>
       <pubDate>Thu, 31 Dec 2020 23:52:54 +0900</pubDate>
       
-      <guid>http://www.numa-blog.tokyo/posts/review-2020/</guid>
+      <guid>https://www.numa-blog.tokyo/posts/review-2020/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rakuten Intern~二子玉川夏の陣~参加してきました</title>
-      <link>http://www.numa-blog.tokyo/posts/rakuten-intern/</link>
+      <link>https://www.numa-blog.tokyo/posts/rakuten-intern/</link>
       <pubDate>Sun, 04 Oct 2020 23:13:50 +0900</pubDate>
       
-      <guid>http://www.numa-blog.tokyo/posts/rakuten-intern/</guid>
+      <guid>https://www.numa-blog.tokyo/posts/rakuten-intern/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AtcoderBeginnerContest174 C問題の考察</title>
-      <link>http://www.numa-blog.tokyo/posts/abc174-c/</link>
+      <link>https://www.numa-blog.tokyo/posts/abc174-c/</link>
       <pubDate>Sun, 09 Aug 2020 21:54:52 +0900</pubDate>
       
-      <guid>http://www.numa-blog.tokyo/posts/abc174-c/</guid>
+      <guid>https://www.numa-blog.tokyo/posts/abc174-c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>サルでもわかる遺伝的アルゴリズム</title>
-      <link>http://www.numa-blog.tokyo/posts/monkey-ga/</link>
+      <link>https://www.numa-blog.tokyo/posts/monkey-ga/</link>
       <pubDate>Sun, 02 Aug 2020 21:20:47 +0900</pubDate>
       
-      <guid>http://www.numa-blog.tokyo/posts/monkey-ga/</guid>
+      <guid>https://www.numa-blog.tokyo/posts/monkey-ga/</guid>
       <description></description>
     </item>
     

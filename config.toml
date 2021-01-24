@@ -5,6 +5,6 @@ theme = "chunky-poster"
 hasCJKLanguage = true
 summaryLength = 0
 [params]
-images = ["og.png"]
+images = ["/images/og.png"]
 twitterID = "@__N_u_m_a"
 description = "numaの個人ブログです。技術的なことからインターン体験記など投稿しています。"
