@@ -4,5 +4,7 @@ title = "numa's blog ~memo~"
 theme = "chunky-poster"
 hasCJKLanguage = true
 summaryLength = 0
-[Params]
-  images = ["/static/images/icon-numa.png"]
+[params]
+images = ["og.png"]
+twitterID = "@__N_u_m_a"
+description = "numaの個人ブログです。技術的なことからインターン体験記など投稿しています。"
