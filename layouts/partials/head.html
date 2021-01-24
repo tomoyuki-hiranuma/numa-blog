@@ -50,8 +50,16 @@
   <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}">
 {{- end -}}
 
-{{- template "_internal/opengraph.html" . -}}
+<meta property="og:title" content="{{ .Title }}" />
+<meta name="og:description" content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
 {{- template "_internal/google_news.html" . -}}
 {{- template "_internal/schema.html" . -}}
+{{- with $.Site.Params.images -}}
+<meta name="og:image" content="{{ index . 0 | absURL }}" />
+{{ end }}
+<meta name="twitter:url" content="{{ .Permalink }}" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:site" content="{{$.Site.Params.twitterID}}"/>
+<meta name="twitter:site" content="{{ $.Site.Params.twitterID }}"/>
+<meta name="twitter:creator" content="{{ $.Site.Params.twitterID }}" />
