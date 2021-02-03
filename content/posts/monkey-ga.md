@@ -2,7 +2,7 @@
 title: "サルでもわかる遺伝的アルゴリズム"
 date: 2020-08-02T21:20:47+09:00
 draft: false
-images: ["/images/monkey-found.png"]
+images: ["/images/thumbnails/monkey-found.png"]
 tags: ["blog"]
 categories: ["Genetic Algorithm"]
 ---

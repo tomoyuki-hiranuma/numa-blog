@@ -2,7 +2,7 @@
 title: "2020年振り返り"
 date: 2020-12-31T23:52:54+09:00
 draft: false
-images: ["/images/coding-man.jpg"]
+images: ["/images/thumbnails/coding-man.jpg"]
 tags: ["blog"]
 categories: ["まとめ"]
 ---

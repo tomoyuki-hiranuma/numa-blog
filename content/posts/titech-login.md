@@ -2,7 +2,7 @@
 title: "大学ポータルに自動ログインしてみました(~Ruby編~)"
 date: 2021-01-24T17:43:43+09:00
 draft: false
-images: ["/images/ruby-titech.png"]
+images: ["/images/thumbnails/ruby-titech.png"]
 tags: ["ruby"]
 categories: ["program"]
 ---
