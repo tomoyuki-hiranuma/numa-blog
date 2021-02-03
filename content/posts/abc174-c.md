@@ -2,6 +2,8 @@
 title: "AtcoderBeginnerContest174 C問題の考察"
 date: 2020-08-09T21:54:52+09:00
 draft: false
+tags: ["C++"]
+categories: ["AtCoder"]
 ---
 
 こんにちは。numaです．
