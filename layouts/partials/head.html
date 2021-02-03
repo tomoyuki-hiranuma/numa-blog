@@ -56,9 +56,18 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 {{- template "_internal/google_news.html" . -}}
 {{- template "_internal/schema.html" . -}}
-{{- with $.Site.Params.images -}}
-<meta name="og:image" content="{{ index . 0 | absURL }}" />
+{{ if .Params.images }}
+  {{ with .Params.images }}
+  <meta name="og:image" content="{{ index . 0 | absURL }}" />
+  <meta name="og:image:url" content="{{ index . 0 | absURL }}" />
+  {{ end }}
+{{ else }}
+  {{ with $.Site.Params.images }}
+  <meta name="og:image" content="{{ index . 0 | absURL }}" />
+  <meta name="og:image:url" content="{{ index . 0 | absURL }}" />
+  {{ end }}
 {{ end }}
+
 <meta name="twitter:url" content="{{ .Permalink }}" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:site" content="{{ $.Site.Params.twitterID }}"/>

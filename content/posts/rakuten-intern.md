@@ -3,6 +3,8 @@ title: "Rakuten Intern~二子玉川夏の陣~参加してきました"
 date: 2020-10-04T23:13:50+09:00
 draft: false
 images: ["/images/rakuten-2020.png"]
+tags: ["internship"]
+categories: ["体験記"]
 ---
 
 こんにちは。ぬまです。  
