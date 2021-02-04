@@ -1,5 +1,5 @@
 ---
-title: "pgmpyを使ってあそぼ~ベイジアンネットワーク~"
+title: "ベイジアンネットワークの実装メモ"
 date: 2021-02-04T02:05:51+09:00
 draft: false
 tags: ["Bayesian-Network"]
