@@ -4,6 +4,7 @@ title = "numa's blog ~memo~"
 theme = "chunky-poster"
 hasCJKLanguage = true
 summaryLength = 0
+disqusShortname = "https-numa-blog-tokyo"
 [params]
 images = ["/thumbnails/og.png"]
 twitterID = "@__N_u_m_a"
