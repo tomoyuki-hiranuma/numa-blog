@@ -6,6 +6,6 @@ hasCJKLanguage = true
 summaryLength = 0
 disqusShortname = "https-numa-blog-tokyo"
 [params]
-images = ["/thumbnails/og.png"]
+images = ["/images/thumbnails/og.png"]
 twitterID = "@__N_u_m_a"
 description = "numaの個人ブログです。技術的なことから体験記など投稿しています。"
