@@ -1,7 +1,7 @@
 ---
 title: "Flux完全に理解した"
 date: 2021-03-12T13:39:52+09:00
-draft: true
+draft: false
 tags: ["react", "redux"]
 categories: ["Web"]
 images: ["/images/thumbnails/flux.png"]
