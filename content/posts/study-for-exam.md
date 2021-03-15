@@ -4,7 +4,7 @@ date: 2019-11-02T00:37:00+09:00
 draft: false
 tags: [""]
 categories: [""]
-images: []
+images: ["/images/thumbnails/happy-man.jpg"]
 ---
 
 こんにちは、ぬまです。  
